@@ -1,0 +1,24 @@
+{
+  "name": "wgl-contadores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./public/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmi15/wgl-contadores.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanmi15/wgl-contadores/issues"
+  },
+  "homepage": "https://github.com/juanmi15/wgl-contadores#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
