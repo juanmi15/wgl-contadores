@@ -6,52 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--        Tailwind CSS           -->
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>WGL-Contadores</title>
 </head>
-<body>
-    <nav class="flex items-center justify-between bg-gradient-to-r from-blue-900  to-blue-700">
+<body class="font-WorkSans">
+    <nav class="flex items-center justify-between bg-gradient-to-r from-blue-900  to-blue-700 py-1">
         <img src="./img/logo-blanco.png" alt="logo" width="110 px" class="ml-2">
-        <a href="#" class="mr-2">
-            <img src="./svg/lines-white.svg" alt="menu" class="w-10">
+        <a href="#" class="mr-4">
+            <img src="./svg/lines-white.svg" alt="menu" class="w-10 ">
         </a>
     </nav>
     <section>
-        <figure>
-            <img src="./img/portada.jpg" alt="portada">
+        <figure class="relative">
+            <img src="./img/portada.jpg" alt="portada" class="">
+            <a href="#" >
+                <img src="./svg/whatsapp.svg" alt="whatsapp-icon" class="absolute top-12 right-5 w-[50px]  bg-green-600 bg-opacity-70 hover:bg-opacity-100 rounded-xl transform hover:scale-125 transition duration-300" >
+            </a>
+            <a href="#" >
+                <img src="./svg/instagram.svg" alt="insta" class="absolute top-28 right-5 w-[50px] bg-gradient-to-r from-yellow-500 to-purple-500 via-red-600 bg-opacity-70 hover:bg-opacity-100 rounded-xl transform hover:scale-125 transition duration-300" >
+            </a>
+            <a href="#contact-email" >
+                <img src="./svg/email.svg" alt="insta" class="absolute top-44 right-5 w-[50px] bg-blue-400 bg-opacity-70 hover:bg-opacity-100 rounded-xl transform hover:scale-125 transition duration-300" >
+            </a>
         </figure>
         <div class="w-full flex flex-col items-center">
             <div>   
-                <h2 class="py-5 justify-self-start text-primary font-bold text-2xl">NUESTROS SERVICIOS</h2>
+                <h2 class="pt-5 pb-3 justify-self-start text-gray-400 font-bold text-2xl">NUESTROS SERVICIOS</h2>
             </div>
-            <div class="max-w-[90%]">
+            <div class="max-w-[90%] ">
                 <div class="my-3">
-                    <img src="./img/asesoria1.jpg" alt="" class="rounded-t-lg">
-                    <div class="bg-blue-700 rounded-b-lg h-[50px] flex items-center justify-center">
+                    <img src="./img/asesoria1.jpg" alt="" class="rounded-t-lg opacity-80">
+                    <div class="bg-blue-800 rounded-b-lg h-[50px] flex items-center justify-center cursor-pointer hover:bg-blue-600 transition duration-[.5s] ease">
                         <p class="text-lg font-semibold text-white">Asesoría contable</p>
                     </div>
                 </div>
                 <div class="my-3">
-                    <img src="./img/asesoria3.jpg" alt="" class="rounded-t-lg">
-                    <div class="bg-blue-700 rounded-b-lg h-[50px] flex items-center justify-center">
+                    <img src="./img/asesoria3.jpg" alt="" class="rounded-t-lg opacity-80">
+                    <div class="bg-blue-800 rounded-b-lg h-[50px] flex items-center justify-center cursor-pointer hover:bg-blue-600 transition duration-[.5s] ease">
                         <p class="text-lg font-semibold text-white">Asesoría financiera</p>
                     </div>
                 </div>
                 <div class="my-3">
-                    <img src="./img/asesoria2.jpg" alt="" class="rounded-t-lg">
-                    <div class="bg-blue-700 rounded-b-lg h-[50px] flex items-center justify-center">
+                    <img src="./img/asesoria2.jpg" alt="" class="rounded-t-lg opacity-80">
+                    <div class="bg-blue-800 rounded-b-lg h-[50px] flex items-center justify-center cursor-pointer hover:bg-blue-600 transition duration-[.5s] ease">
                         <p class="text-lg font-semibold text-white">Asesoría tributaria</p>
                     </div>
                 </div>
                 <div class="my-3">
-                    <img src="./img/asesoria3.jpg" alt="" class="rounded-t-lg">
-                    <div class="bg-blue-700 rounded-b-lg h-[50px] flex items-center justify-center">
+                    <img src="./img/asesoria3.jpg" alt="" class="rounded-t-lg opacity-80">
+                    <div class="bg-blue-800 rounded-b-lg h-[50px] flex items-center justify-center cursor-pointer hover:bg-blue-600 transition duration-[.5s] ease">
                         <p class="text-lg font-semibold text-white">Administración de proyectos</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="mt-4">
+        <form action="" id="contact-email" class="flex flex-col p-5 bg-gray-300 max-w-[90%] mx-auto rounded-lg mb-5 shadow-lg">
+            <div class="mb-7 self-center text-center">
+                <h3 class="text-2xl  text-blue-900 font-semibold">¡Contáctanos Ahora!</h3>
+                <p class="text-lg font-semibold text-gray-500">Para adquirir nuestros servicios</p>
+            </div>
+            
 
+            <label for="nombre" class="font-semibold text-gray-700">Nombre</label>
+            <input id="nombre" type="text" class="w-full py-2 bg-gray-100 text-black px-1 outline-none mb-4 rounded-lg">
+            <label for="email" class="font-semibold text-gray-700">Email</label>
+            <input id="email" type="email" class="w-full py-2 bg-gray-100 text-black px-1 outline-none mb-4 rounded-lg">
+            <label for="telefono" class="font-semibold text-gray-700">Teléfono</label>
+            <input id="telefono" type="number" class="w-full py-2 bg-gray-100 text-black px-1 outline-none mb-4 rounded-lg">
+            <label for="mensaje" class="font-semibold text-gray-700">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="bg-gray-100 text-black px-1 outline-none mb-4 rounded-lg p-2"></textarea>
+
+            <button type="submit"  class="bg-blue-800 p-3 w-[50%] self-center rounded-lg text-white font-semibold text-xl transform hover:scale-110 transition duration-500 hover:bg-blue-700 hover:shadow-lg hover:text-white">
+                Enviar
+            </button>
+        </form>
+    </section>
+    <footer class="w-full py-5 bg-blue-900 flex justify-center">
+        <p class="max-w-[90%] text-gray-100 text-center">Copyright © 2022 WGL. Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
 

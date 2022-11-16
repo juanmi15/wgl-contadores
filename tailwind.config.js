@@ -22,7 +22,7 @@ module.exports = {
         'tertiary': '#1074bc',
         },
         fontFamily:{
-          Montserrat:['Montserrat', 'sans-serif']
+          WorkSans:['Work Sans', 'sans-serif'] 
         },
     },
   },
